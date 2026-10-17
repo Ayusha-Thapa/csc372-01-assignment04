@@ -1,0 +1,59 @@
+<!--
+Name: Ayusha Thapa
+Course: CSC 372-01
+Assignment: Assignment 4 - TV Show Search
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Show Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>TV Show Gallery</h1>
+        <p>Find your favorite shows and discover something new!</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Search for a Show</h2>
+
+            <form id="search-form">
+                <label for="search-input">Show title or keyword:</label>
+
+                <input
+                    type="search"
+                    id="search-input"
+                    name="query"
+                    placeholder="Type a show title or keyword..."
+                >
+
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Search Results</h2>
+
+            <p id="message" role="status"></p>
+
+            <div id="show-gallery"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Show data provided by
+            <a href="https://www.tvmaze.com/">TVmaze</a>.
+            View the
+            <a href="https://www.tvmaze.com/api#licensing">API licensing terms</a>.
+        </p>
+    </footer>
+</body>
+</html>

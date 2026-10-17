@@ -1,0 +1,221 @@
+/*
+Name: Ayusha Thapa
+Course: CSC 372-01
+Assignment: Assignment 4 - TV Show Search
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+/* Main page */
+body {
+    margin: 0;
+    background-color: #f7f1e8;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    padding: 45px 20px;
+    background-color: #344e41;
+    color: white;
+    text-align: center;
+    border-bottom: 5px solid #d6b779;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, serif;
+}
+
+h2,
+.show-card h3 {
+    color: #344e41;
+}
+
+h1 {
+    margin: 0;
+    font-size: 38px;
+}
+
+header p {
+    margin: 12px 0 0;
+    color: #e5ecdf;
+}
+
+/* Center the page content */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 35px 20px;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 26px;
+}
+
+/* Search area */
+form {
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #e3dfd5;
+    border-radius: 12px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #344e41;
+    font-weight: bold;
+}
+
+input {
+    width: 75%;
+    padding: 13px;
+    background-color: #faf9f5;
+    border: 1px solid #b8c3b8;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    padding: 13px 20px;
+    background-color: #344e41;
+    color: white;
+    border: 1px solid #344e41;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.6;
+}
+
+/* Search messages */
+#message {
+    color: #555555;
+    font-size: 14px;
+}
+
+/* Flexbox gallery */
+#show-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Show cards */
+.show-card {
+    width: 31%;
+    min-width: 0;
+    padding: 22px;
+    background-color: white;
+    border: 1px solid #e3dfd5;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+    overflow-wrap: anywhere;
+}
+
+.show-card h3 {
+    margin: 0 0 18px;
+    font-size: 23px;
+    line-height: 1.3;
+}
+
+/* Show posters */
+.show-card img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    margin-bottom: 18px;
+    padding: 10px;
+    background-color: #f0f2eb;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+/* Show details */
+.show-card p {
+    margin: 12px 0;
+    color: #505850;
+    font-size: 14px;
+}
+
+/* TVmaze links */
+.show-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 9px 13px;
+    background-color: #edf1e8;
+    color: #344e41;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    padding: 25px 20px;
+    background-color: #344e41;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #f4d58d;
+}
+
+/* Medium screens: two cards per row */
+@media (max-width: 900px) {
+    .show-card {
+        width: 48%;
+    }
+
+    input {
+        width: 65%;
+    }
+}
+
+/* Small screens: one card per row */
+@media (max-width: 600px) {
+    header {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .show-card {
+        width: 100%;
+    }
+}
